@@ -1,0 +1,14 @@
+// nav.scss
+
+nav {
+  display: flex;
+  justify-content: center;
+  height: 100px;
+  align-items: center;
+
+  a {
+    margin: 0 25px;
+    text-decoration: none;
+    color: purple;
+  }
+}
