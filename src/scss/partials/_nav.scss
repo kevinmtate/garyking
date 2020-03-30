@@ -7,8 +7,14 @@ nav {
   align-items: center;
 
   a {
+    color: gray;
+    font-family: sans-serif;
     margin: 0 25px;
     text-decoration: none;
-    color: purple;
+    text-transform: uppercase;
+
+    &:hover {
+      color: white;
+    }
   }
 }

@@ -1,0 +1,24 @@
+// header.scss
+
+header {
+  align-items: center;
+  display: flex;
+  height: 500px;
+  justify-content: center;
+
+  .name {
+
+    h1 {
+      span:last-child {
+        color: red;
+      }
+    }
+
+    .japanese-king {
+      color: yellow;
+      font-size: 3em;
+      left: 75%;
+      position: relative;
+    }
+  }
+}

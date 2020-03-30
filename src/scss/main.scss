@@ -1,26 +1,10 @@
 // main.scss
 
-@import 'partials/reset.scss';
-@import 'partials/typography.scss';
+@import 'partials/reset';
 
-@import 'partials/nav.scss';
+@import 'partials/base';
+@import 'partials/header';
+@import 'partials/nav';
+@import 'partials/typography';
 
-body {
-  height: 100vh;
-  width: 100vw;
-
-  h1 {
-    font-size: 4em;
-    margin: 25px;
-  }
-
-  h2 {
-    font-size: 2em;
-    margin: 25px;
-  }
-
-  p {
-    margin: 25px;
-    width: 750px;
-  }
-}
+@import 'partials/logo';
