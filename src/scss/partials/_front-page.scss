@@ -1,0 +1,25 @@
+// front-page.scss
+
+.front-page {
+  display: flex;
+  height: 100vh;
+
+  .name {
+    margin: auto;
+
+    h1 {
+      font-family: 'Press Start 2P', sans-serif;
+      
+      span:last-child {
+        color: red;
+      }
+    }
+
+    .japanese-king {
+      color: yellow;
+      font-size: 3em;
+      left: 75%;
+      position: relative;
+    }
+  }
+}
