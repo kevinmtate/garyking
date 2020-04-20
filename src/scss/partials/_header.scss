@@ -19,14 +19,13 @@ header {
     align-items: center;
   
     a {
-      color: gray;
-      font-family: sans-serif;
+      color: white;
       margin: 0 25px;
       text-decoration: none;
       text-transform: uppercase;
   
       &:hover {
-        color: white;
+        color: blue;
       }
     }
   }

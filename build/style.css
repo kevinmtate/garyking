@@ -54,7 +54,7 @@ table {
 }
 
 .g-king--container {
-  background-color: black;
+  background-color: gray;
   color: white;
 }
 
@@ -72,7 +72,7 @@ footer {
 }
 footer #mc_embed_signup {
   background-color: black;
-  font-family: sans-serif;
+  font-family: "Press Start 2P", sans-serif;
 }
 
 header {
@@ -93,23 +93,18 @@ header nav {
   align-items: center;
 }
 header nav a {
-  color: gray;
-  font-family: sans-serif;
+  color: white;
   margin: 0 25px;
   text-decoration: none;
   text-transform: uppercase;
 }
 header nav a:hover {
-  color: white;
+  color: blue;
 }
 
 body {
-  font-family: sans-serif;
+  font-family: "Press Start 2P", sans-serif;
   font-size: 16px;
-}
-
-h1 {
-  font-size: 4em;
 }
 
 h2 {
@@ -128,18 +123,32 @@ p {
 }
 .front-page .name {
   margin: auto;
+  padding: 100px;
 }
 .front-page .name h1 {
-  font-family: "Press Start 2P", sans-serif;
+  font-family: sans-serif;
+  font-size: 10em;
+  font-weight: 700;
+  text-shadow: -10px -5px black;
+}
+.front-page .name h1 span:first-child {
+  color: blue;
 }
 .front-page .name h1 span:last-child {
   color: red;
 }
 .front-page .name .japanese-king {
-  color: yellow;
-  font-size: 3em;
-  left: 75%;
+  float: right;
   position: relative;
+  top: 20px;
+}
+.front-page .name .japanese-king span {
+  background-color: yellow;
+  border-radius: 50%;
+  color: black;
+  font-size: 2em;
+  padding: 7px;
+  border: 2px solid black;
 }
 
 /*# sourceMappingURL=style.css.map */
