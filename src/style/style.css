@@ -1,58 +1,58 @@
-.logo {
+header {
   background-color: black;
-  cursor: pointer;
   height: 100vh;
-  position: relative;
-  width: 100vw;
-  z-index: 10;
-}
-
-.logo img {
-  height: 100%;
-  left: 50%;
   position: absolute;
-  transform: translateX(-50%);
-}
-
-.container {
-  display: flex;
-}
-
-aside {
-  width: 33vw;
+  width: 100vw;
 }
 
 nav {
-  align-items: center;
-  background-color: blue;
-  display: flex;
-  height: 100vh;
-  justify-content: flex-end;
-  left: 0;
-  position: sticky;
-  top: 0;
+  margin-top: 50px;
+  position: relative;
+  text-align: center;
   z-index: 1;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-link {
+  margin: 0 25px;
+}
+
+.nav-link:hover span {
+  width: 100%;
 }
 
 nav a {
   color: white;
-  display: block;
   font-family: 'Press Start 2P', sans-serif;
-  font-size: 2rem;
-  margin: 50px 0;
   text-decoration: none;
 }
 
-.nav-links {
-  padding-right: 25px;
-  text-align: right;
+nav span {
+  background-color: white;
+  display: block;
+  height: 2px;
+  margin-top: 5px;
+  transition: width .5s;
+  width: 0;
+}
+
+header img {
+  height: 100%;
+  left: 50%;
+  position: absolute;
+  top: 0;
+  transform: translateX(-50%);
 }
 
 main {
   box-sizing: border-box;
   display: inline-block;
   padding: 250px 50px;
-  width: 66vw;
+  width: 66%;
 }
 
 h2 {
@@ -69,4 +69,8 @@ p {
 
 .section {
   margin-bottom: 250px;
+}
+
+iframe {
+  width: 100%;
 }
