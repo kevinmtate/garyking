@@ -86,12 +86,26 @@ h2 {
 }
 
 p {
-  color: lightgray;
   font-size: 1.5rem;
   letter-spacing: 1px;
   line-height: 1.25;
   margin: auto;
   max-width: 1230px;
+}
+
+.section p {
+  color: lightgray;
+}
+.section-gray p {
+  color: black;
+}
+
+.section {
+  padding: 250px 0;
+}
+
+.section-gray {
+  background-color: lightgray;
 }
 
 .section-separator {
@@ -102,7 +116,8 @@ p {
 }
 
 iframe {
-  width: 100%;
+  min-width: 300px;
+  width: 50%;
 }
 
 .back-to-top {
@@ -121,7 +136,7 @@ iframe {
 }
 
 .back-to-top a i {
-  color: lightgray;
+  color: white;
 }
 
 @media only screen and (max-width: 767px) {
