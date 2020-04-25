@@ -11,6 +11,7 @@ header {
 nav {
   position: relative;
   text-align: center;
+  transition: left .5s;
   z-index: 1;
 }
 
@@ -31,6 +32,7 @@ nav {
 nav a {
   color: white;
   font-family: 'Press Start 2P', sans-serif;
+  font-size: 1.5rem;
   text-decoration: none;
 }
 
@@ -43,9 +45,27 @@ nav span {
   width: 0;
 }
 
+.hamburger {
+  cursor: pointer;
+  display: none;
+  left: 25px;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.hamburger span {
+  background-color: lightgray;
+  display: block;
+  height: 3px;
+  margin: 10px 0;
+  position: relative;
+  width: 50px;
+}
+
 header img {
-  height: 75%;
+  height: auto;
   left: 50%;
+  max-width: 100%;
   position: absolute;
   top: 15%;
   transform: translateX(-50%);
@@ -102,4 +122,46 @@ iframe {
 
 .back-to-top a i {
   color: lightgray;
+}
+
+@media only screen and (max-width: 767px) {
+  .hamburger {
+    display: block;
+  }
+
+  nav {
+    left: -250px;
+  }
+
+  .show-mobile-nav {
+    left: 0;
+  }
+
+  .nav-links {
+    align-items: flex-end;
+    background-color: lightgray;
+    flex-direction: column;
+    height: 750px;
+    justify-content: flex-start;
+    padding-top: 75px;
+    width: 250px;
+  }
+
+  .nav-link {
+    margin: 10px 25px;
+  }
+
+  nav a {
+    color: black;
+  }
+
+  .nav-link:hover span {
+    width: 0;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  header img {
+    top: 25%;
+  }
 }
