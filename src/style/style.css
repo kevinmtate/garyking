@@ -109,16 +109,33 @@ p {
   background-color: lightgray;
 }
 
-.section-separator {
-  background-color: white;
-  height: 2px;
-  margin: 250px auto;
-  width: 100px;
+#music h2 a {
+  color: white;
 }
 
-iframe {
+h3 {
+  color: lightgray;
+  font-size: 2rem;
+  margin: 25px 0;
+  text-transform: uppercase;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+}
+
+.music-subsection {
+  padding-bottom: 50px;
+}
+
+#music iframe {
+  margin: 0 25px;
   min-width: 300px;
-  width: 50%;
+}
+
+iframe.single {
+  height: 80px;
 }
 
 .back-to-top {
