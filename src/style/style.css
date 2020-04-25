@@ -91,6 +91,7 @@ p {
   line-height: 1.25;
   margin: auto;
   max-width: 1230px;
+  padding: 0 15px;
 }
 
 .section p {
@@ -139,9 +140,9 @@ iframe {
   color: white;
 }
 
-@media only screen and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .hamburger {
-    display: block;
+    display: inline-block;
   }
 
   nav {
@@ -156,7 +157,7 @@ iframe {
     align-items: flex-end;
     background-color: lightgray;
     flex-direction: column;
-    height: 750px;
+    height: 500px;
     justify-content: flex-start;
     padding-top: 75px;
     width: 250px;
