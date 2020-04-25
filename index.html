@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>G. King</title>
+  <script src="https://use.fontawesome.com/f61d977148.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="src/style/reset.css">
   <link rel="stylesheet" href="src/style/style.css">
@@ -12,26 +13,28 @@
     /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
       We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
   </style>
+  <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
 </head>
 
 <body>
+
   <header>
     <nav>
       <div class="nav-links">
         <div class="nav-link">
-          <a href="#about">about</a>
+          <a href="#about" class="smooth-scroll">about</a>
           <span></span>
         </div>
         <div class="nav-link">
-          <a href="#music">music</a>
+          <a href="#music" class="smooth-scroll">music</a>
           <span></span>
         </div>
         <div class="nav-link">
-          <a href="#shows">shows</a>
+          <a href="#shows" class="smooth-scroll">shows</a>
           <span></span>
         </div>
         <div class="nav-link">
-          <a href="#contact">contact</a>
+          <a href="#contact" class="smooth-scroll">contact</a>
           <span></span>
         </div>
       </div>
@@ -39,46 +42,51 @@
     <img src="./src/media/westside.gif" alt="G. King logo - the crown">
   </header>
 
-  <div class="container">
+  <main>
+    <div id="about" class="section">
+      <h2>about</h2>
+      <p>
+        Raised on the westside of Detroit, G. King, captivates audiences with his thought provoking lyricism, that he suggests is better consumed in the evening time. King is committed to bringing his listeners substance masked over various instrumentation taking inspiration all over the spectrum from artists such as Kendrick Lamar, Sean Leon, Eli Sostre, and King Krule. G. King has opened for acts such as Audio Push, Snow the Product, Sage Francis, and aims to elevate his musical reach since moving to New York. 100Fold return is the mantra.
+      </p>
+    </div>
+    <div class="section-separator"></div>
+    <div id="music" class="section">
+      <h2>music</h2>
+      <p>
+        <iframe src="https://open.spotify.com/embed/artist/7eOq2zIC5Gz3vNbh2uGDTk" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+      </p>
+    </div>
+    <div class="section-separator"></div>
+    <div id="shows" class="section">
+      <h2>shows</h2>
+      <p>
+        Upcoming show: INFO COMING SOON
+      </p>
+    </div>
+    <div class="section-separator"></div>
+    <div id="contact" class="section">
+      <h2>contact</h2>
+      <!-- Begin Mailchimp Signup Form -->
+      <div id="mc_embed_signup">
+        <form action="https://gmail.us3.list-manage.com/subscribe/post?u=18e615afd9cffa4c244c9b153&amp;id=cf3c78a645" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+          <div id="mc_embed_signup_scroll">
+            <label for="mce-EMAIL">Subscribe</label>
+            <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_18e615afd9cffa4c244c9b153_cf3c78a645" tabindex="-1" value=""></div>
+            <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+          </div>
+        </form>
+      </div>
+      <!--End mc_embed_signup-->
+    </div>
+  </main>
   
-    <main>
-      <div id="about" class="section">
-        <h2>about</h2>
-        <p>
-          Raised on the westside of Detroit, G. King, captivates audiences with his thought provoking lyricism, that he suggests is better consumed in the evening time. King is committed to bringing his listeners substance masked over various instrumentation taking inspiration all over the spectrum from artists such as Kendrick Lamar, Sean Leon, Eli Sostre, and King Krule. G. King has opened for acts such as Audio Push, Snow the Product, Sage Francis, and aims to elevate his musical reach since moving to New York. 100Fold return is the mantra.
-        </p>
-      </div>
-      <div id="music" class="section">
-        <h2>music</h2>
-        <p>
-          <iframe src="https://open.spotify.com/embed/artist/7eOq2zIC5Gz3vNbh2uGDTk" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-        </p>
-      </div>
-      <div id="shows" class="section">
-        <h2>shows</h2>
-        <p>
-          Upcoming show: INFO COMING SOON
-        </p>
-      </div>
-      <div id="contact" class="section">
-        <h2>contact</h2>
-        <!-- Begin Mailchimp Signup Form -->
-        <div id="mc_embed_signup">
-          <form action="https://gmail.us3.list-manage.com/subscribe/post?u=18e615afd9cffa4c244c9b153&amp;id=cf3c78a645" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-            <div id="mc_embed_signup_scroll">
-              <label for="mce-EMAIL">Subscribe</label>
-              <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
-              <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-              <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_18e615afd9cffa4c244c9b153_cf3c78a645" tabindex="-1" value=""></div>
-              <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-            </div>
-          </form>
-        </div>
-        <!--End mc_embed_signup-->
-      </div>
-    </main>
+  <div class="back-to-top">
+    <a href="#" class="smooth-scroll">
+      <i class="fas fa-arrow-up fa-3x"></i>
+    </a>
   </div>
-
 
   <script src="src/js/main.js"></script>
 </body>

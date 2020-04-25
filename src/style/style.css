@@ -1,7 +1,9 @@
-header {
+body {
   background-color: black;
+}
+
+header {
   height: 100vh;
-  position: absolute;
   width: 100vw;
 }
 
@@ -14,6 +16,7 @@ nav {
 
 .nav-links {
   display: flex;
+  cursor: pointer;
   justify-content: center;
 }
 
@@ -51,26 +54,48 @@ header img {
 main {
   box-sizing: border-box;
   display: inline-block;
-  padding: 250px 50px;
-  width: 66%;
+  padding-top: 100px;
+  text-align: center;
+  width: 100%;
 }
 
 h2 {
-  color: blue;
+  color: white;
   font-size: 5rem;
   margin-bottom: 50px;
 }
 
 p {
+  color: lightgray;
   font-size: 1.5rem;
   letter-spacing: 1px;
   line-height: 1.25;
+  margin: auto;
+  max-width: 1230px;
 }
 
-.section {
-  margin-bottom: 250px;
+.section-separator {
+  background-color: white;
+  height: 2px;
+  margin: 250px auto;
+  width: 100px;
 }
 
 iframe {
+  width: 100%;
+}
+
+.back-to-top {
+  bottom: 50px;
+  height: 50px;
+  position: fixed;
+  right: -50px;
+  transition: right .5s;
+  width: 50px;
+}
+
+.back-to-top a {
+  display: block;
+  height: 100%;
   width: 100%;
 }
