@@ -2,69 +2,74 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-
   <title>G. King</title>
-
-  <link rel="stylesheet" href="build/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="src/style/reset.css">
+  <link rel="stylesheet" href="src/style/style.css">
+  <link href="https://cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+  <style type="text/css">
+    #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
+    /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+      We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+  </style>
 </head>
 
 <body>
-
   <header>
     <div class="logo">
-      <img src="./src/media/gking_logo.png" alt="G. King logo - the crown">
+      <img src="./src/media/westside.gif" alt="G. King logo - the crown">
     </div>
-
-    <nav>
-      <a href="#">About</a>
-      <a href="#">Music</a>
-      <a href="#">Shows</a>
-      <a href="#">Contact</a>
-    </nav>
   </header>
 
-  <div class="g-king--container">
-
-    <div class="front-page">
-      <div class="name">
-        <h1><span>G. </span><span>King</span></h1>
-        <div class="japanese-king"><span>キ</span><span>ン</span><span>グ</span></div>
+  <div class="container">
+    <aside>
+      <nav>
+        <div class="nav-links">
+          <a href="#about">about</a>
+          <a href="#music">music</a>
+          <a href="#shows">shows</a>
+          <a href="#contact">contact</a>
+        </div>
+      </nav>
+    </aside>
+  
+    <main>
+      <div id="about" class="section">
+        <h2>about</h2>
+        <p>
+          Raised on the westside of Detroit, G. King, captivates audiences with his thought provoking lyricism, that he suggests is better consumed in the evening time. King is committed to bringing his listeners substance masked over various instrumentation taking inspiration all over the spectrum from artists such as Kendrick Lamar, Sean Leon, Eli Sostre, and King Krule. G. King has opened for acts such as Audio Push, Snow the Product, Sage Francis, and aims to elevate his musical reach since moving to New York. 100Fold return is the mantra.
+        </p>
       </div>
-    </div>
-
+      <div id="music" class="section">
+        <h2>music</h2>
+        <p>
+          <iframe src="https://open.spotify.com/embed/artist/7eOq2zIC5Gz3vNbh2uGDTk" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        </p>
+      </div>
+      <div id="shows" class="section">
+        <h2>shows</h2>
+        <p>
+          Upcoming show: INFO COMING SOON
+        </p>
+      </div>
+      <div id="contact" class="section">
+        <h2>contact</h2>
+        <div class="email-signup">
+          <div id="mc_embed_signup">
+            <form action="https://gmail.us3.list-manage.com/subscribe/post?u=18e615afd9cffa4c244c9b153&amp;id=cf3c78a645" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+              <div id="mc_embed_signup_scroll">
+                <label for="mce-EMAIL">Subscribe to G. King</label>
+                <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_18e615afd9cffa4c244c9b153_cf3c78a645" tabindex="-1" value=""></div>
+                <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
   </div>
 
-  <footer>
-    <div class="footer-song">
-      <iframe src="https://open.spotify.com/embed/track/5M3bDxk8Qs6KxmL360exbI" width="300" height="100" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-    </div>
-
-    <div class="email-signup">
-      <!-- Begin Mailchimp Signup Form -->
-      <link href="https://cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
-      <style type="text/css">
-        #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
-        /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
-          We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-      </style>
-      <div id="mc_embed_signup">
-        <form action="https://gmail.us3.list-manage.com/subscribe/post?u=18e615afd9cffa4c244c9b153&amp;id=cf3c78a645" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-          <div id="mc_embed_signup_scroll">
-            <label for="mce-EMAIL">Subscribe to G. King</label>
-            <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
-            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_18e615afd9cffa4c244c9b153_cf3c78a645" tabindex="-1" value=""></div>
-            <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-          </div>
-        </form>
-      </div>
-      <!--End mc_embed_signup-->
-    </div>
-
-    <div class="next-show-info">
-      Upcoming show: INFO COMING SOON
-    </div>
-  </footer>
 
   <script src="src/js/main.js"></script>
 </body>

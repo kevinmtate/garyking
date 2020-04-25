@@ -1,0 +1,72 @@
+.logo {
+  background-color: black;
+  cursor: pointer;
+  height: 100vh;
+  position: relative;
+  width: 100vw;
+  z-index: 10;
+}
+
+.logo img {
+  height: 100%;
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+}
+
+.container {
+  display: flex;
+}
+
+aside {
+  width: 33vw;
+}
+
+nav {
+  align-items: center;
+  background-color: blue;
+  display: flex;
+  height: 100vh;
+  justify-content: flex-end;
+  left: 0;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+nav a {
+  color: white;
+  display: block;
+  font-family: 'Press Start 2P', sans-serif;
+  font-size: 2rem;
+  margin: 50px 0;
+  text-decoration: none;
+}
+
+.nav-links {
+  padding-right: 25px;
+  text-align: right;
+}
+
+main {
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 250px 50px;
+  width: 66vw;
+}
+
+h2 {
+  color: blue;
+  font-size: 5rem;
+  margin-bottom: 50px;
+}
+
+p {
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  line-height: 1.25;
+}
+
+.section {
+  margin-bottom: 250px;
+}
