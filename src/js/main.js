@@ -6,9 +6,9 @@
     });
 
     // https://github.com/michalsnik/aos
-    AOS.init({
-      duration: 1500
-    });
+    // AOS.init({
+    //   duration: 1500
+    // });
 
     initBackToTopButton('.back-to-top');
     initHamburgerMenu('.hamburger');
