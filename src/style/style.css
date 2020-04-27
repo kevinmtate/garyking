@@ -1,3 +1,7 @@
+body {
+  background-color: black;
+}
+
 header {
   height: 100vh;
   width: 100vw;
@@ -84,7 +88,6 @@ header img {
 }
 
 main {
-  background-color: black;
   box-sizing: border-box;
   display: inline-block;
   padding-top: 100px;
@@ -97,6 +100,7 @@ h2 {
   color: white;
   display: inline-block;
   font-size: 5rem;
+  font-weight: 700;
   margin-bottom: 50px;
 }
 
@@ -133,6 +137,7 @@ section {
 h3 {
   color: black;
   font-size: 2rem;
+  font-weight: 700;
   margin: 25px 0;
   text-transform: uppercase;
 }
