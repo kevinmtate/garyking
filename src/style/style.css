@@ -214,6 +214,6 @@ iframe.single {
 
 @media only screen and (max-width: 400px) {
   header img {
-    top: 25%;
+    top: 20%;
   }
 }
