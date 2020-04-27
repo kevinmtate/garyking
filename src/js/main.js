@@ -2,7 +2,7 @@
   document.addEventListener('DOMContentLoaded', function() {
     // https://github.com/cferdinandi/smooth-scroll
     var scroll = new SmoothScroll('a.smooth-scroll', {
-      speed: 1000
+      speed: 750
     });
 
     // https://github.com/michalsnik/aos
