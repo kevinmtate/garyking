@@ -4,15 +4,19 @@ body {
 
 header {
   height: 100vh;
-  padding-top: 50px;
   width: 100vw;
 }
 
 nav {
   position: relative;
   text-align: center;
+  top: 50px;
   transition: left .5s;
   z-index: 1;
+}
+
+a {
+  color: rgb(85, 26, 139);
 }
 
 .nav-links {
@@ -37,7 +41,7 @@ nav a {
 }
 
 nav span {
-  background-color: white;
+  background-color: yellow;
   display: block;
   height: 2px;
   margin-top: 5px;
@@ -51,6 +55,7 @@ nav span {
   left: 25px;
   margin-bottom: 25px;
   position: relative;
+  top: 50px;
 }
 
 .hamburger span {
@@ -67,8 +72,19 @@ header img {
   left: 50%;
   max-width: 100%;
   position: absolute;
-  top: 15%;
+  top: 25%;
   transform: translateX(-50%);
+  width: 300px;
+}
+
+.arrow-link:active {
+  color: white;
+}
+
+.scroll-down {
+  bottom: 1%;
+  left: 50%;
+  position: absolute;
 }
 
 main {
@@ -80,7 +96,9 @@ main {
 }
 
 h2 {
+  border-bottom: 5px solid yellow;
   color: white;
+  display: inline-block;
   font-size: 5rem;
   margin-bottom: 50px;
 }
@@ -94,14 +112,14 @@ p {
   padding: 0 15px;
 }
 
-.section p {
+section p {
   color: lightgray;
 }
 .section-gray p {
   color: black;
 }
 
-.section {
+section {
   padding: 250px 0;
 }
 
@@ -151,10 +169,6 @@ iframe.single {
   display: block;
   height: 100%;
   width: 100%;
-}
-
-.back-to-top a i {
-  color: white;
 }
 
 @media screen and (max-width: 767px) {

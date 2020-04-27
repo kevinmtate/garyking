@@ -1,6 +1,14 @@
 (function () {
   document.addEventListener('DOMContentLoaded', function() {
-    var scroll = new SmoothScroll('a.smooth-scroll');
+    // https://github.com/cferdinandi/smooth-scroll
+    var scroll = new SmoothScroll('a.smooth-scroll', {
+      speed: 500
+    });
+
+    // https://github.com/michalsnik/aos
+    AOS.init({
+      duration: 1500
+    });
 
     initBackToTopButton('.back-to-top');
     initHamburgerMenu('.hamburger');
