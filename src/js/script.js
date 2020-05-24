@@ -2,7 +2,7 @@
   document.addEventListener('DOMContentLoaded', function() {
     // https://github.com/cferdinandi/smooth-scroll
     var scroll = new SmoothScroll('a.smooth-scroll', {
-      speed: 750
+      speed: 500
     });
 
     // https://github.com/michalsnik/aos
@@ -18,9 +18,9 @@
     var element = document.querySelector(selector);
     document.addEventListener('scroll', function() {
       if (window.pageYOffset) {
-        element.style.right = '50px';
+        element.classList.add('back-to-top-show');
       } else {
-        element.style.right = '-50px';
+        element.classList.remove('back-to-top-show');
       }
     })
   }

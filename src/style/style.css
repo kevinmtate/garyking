@@ -1,5 +1,33 @@
 body {
-  background-color: black;
+  font-family: 'Noto Serif', serif;
+}
+
+h2 {
+  border-bottom: 5px solid yellow;
+  color: white;
+  display: inline-block;
+  font-size: 3rem;
+  font-style: italic;
+  font-weight: 700;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+}
+
+h3 {
+  color: black;
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 25px 0;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  line-height: 1.25;
+  margin: auto;
+  max-width: 1230px;
+  text-align: left;
 }
 
 header {
@@ -10,7 +38,7 @@ header {
 nav {
   position: relative;
   text-align: center;
-  top: 15%;
+  top: 10%;
   transition: left .5s;
   z-index: 1;
 }
@@ -45,7 +73,7 @@ nav span {
   display: block;
   height: 2px;
   margin-top: 5px;
-  transition: width .5s;
+  transition: width .25s;
   width: 0;
 }
 
@@ -55,7 +83,7 @@ nav span {
   left: 25px;
   margin-bottom: 25px;
   position: relative;
-  top: 50px;
+  top: 25px;
 }
 
 .hamburger span {
@@ -72,8 +100,8 @@ header img {
   left: 50%;
   max-width: 100%;
   position: absolute;
-  top: 30%;
-  transform: translateX(-50%);
+  top: 50%;
+  transform: translate(-50%, -50%);
   width: 300px;
 }
 
@@ -82,40 +110,41 @@ header img {
 }
 
 .scroll-down {
-  bottom: 1%;
+  
+  bottom: 3%;
   left: 50%;
   position: absolute;
+  transform: translateX(-50%);
+}
+
+.scroll-down i {
+  animation: chevronColorChange 8s infinite;
+}
+
+@keyframes chevronColorChange {
+  25% { color: yellow; }
+  50% { color: blue; }
+  75% { color: red; }
+  100% { color: purple; }
 }
 
 main {
   box-sizing: border-box;
   display: inline-block;
-  padding-top: 100px;
   text-align: center;
   width: 100%;
 }
 
-h2 {
-  border-bottom: 5px solid yellow;
-  color: white;
-  display: inline-block;
-  font-size: 5rem;
-  font-weight: 700;
-  margin-bottom: 50px;
-}
-
-p {
-  font-family: 'Kalam', cursive;
-  font-size: 1.75rem;
-  letter-spacing: 1px;
-  line-height: 1.25;
-  margin: auto;
-  max-width: 1230px;
-  padding: 0 15px;
-}
-
 section {
   padding: 150px 0;
+}
+
+#about p {
+  margin-bottom: 25px;
+}
+
+#shows p {
+  text-align: center;
 }
 
 .background-lightgray {
@@ -132,14 +161,6 @@ section {
 
 #music h2 a {
   color: white;
-}
-
-h3 {
-  color: black;
-  font-size: 2rem;
-  font-weight: 700;
-  margin: 25px 0;
-  text-transform: uppercase;
 }
 
 .flex-center {
@@ -161,12 +182,16 @@ iframe.single {
 }
 
 .back-to-top {
-  bottom: 50px;
+  bottom: 25px;
   height: 50px;
   position: fixed;
   right: -50px;
   transition: right .5s;
   width: 50px;
+}
+
+.back-to-top-show {
+  right: 25px;
 }
 
 .back-to-top a {
@@ -176,6 +201,10 @@ iframe.single {
 }
 
 @media screen and (max-width: 767px) {
+  header img {
+    width: 200px;
+  }
+
   .hamburger {
     display: inline-block;
   }
@@ -211,17 +240,29 @@ iframe.single {
     width: 0;
   }
 
+  section {
+    padding: 50px 15px;
+  }
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 25px;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  /* helpers */
   .mb-30 {
     margin-bottom: 30px;
   }
 
   .flex-center {
     flex-direction: column;
-  }
-}
-
-@media only screen and (max-width: 400px) {
-  header img {
-    top: 20%;
   }
 }
