@@ -10,7 +10,7 @@
     //   duration: 1500
     // });
 
-    initBackToTopButton('.back-to-top');
+    // initBackToTopButton('.back-to-top');
     initHamburgerMenu('.hamburger');
   });
 
@@ -26,10 +26,8 @@
   }
 
   function initHamburgerMenu(selector) {
-    var element = document.querySelector(selector);
-    var nav = document.querySelector('nav');
-    element.addEventListener('click', function() {
-      nav.classList.toggle('show-mobile-nav');
+    document.querySelector(selector).addEventListener('click', function() {
+      document.querySelector('nav').classList.toggle('show-mobile-nav');
     });
   }
 })();

@@ -3,12 +3,14 @@
 <head>
   <title>G. King</title>
   <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
   <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Kalam&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="src/style/reset.css">
+  <link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
   <link rel="stylesheet" href="src/style/style.css">
+  <link rel="stylesheet" href="src/style/nav.css">
+  <link rel="stylesheet" href="src/style/home.css">
   <link href="https://cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <style type="text/css">
@@ -19,46 +21,79 @@
   <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
   <script src="https://use.fontawesome.com/f61d977148.js"></script>
 </head>
-
 <body>
-
-  <header class="background-black">
+  <header class="dn">
     <div class="hamburger">
       <span></span>
       <span></span>
       <span></span>
     </div>
-    <nav>
-      <div class="nav-links">
-        <div class="nav-link">
-          <a href="#about" class="smooth-scroll">about</a>
-          <span></span>
-        </div>
-        <div class="nav-link">
-          <a href="#music" class="smooth-scroll">music</a>
-          <span></span>
-        </div>
-        <div class="nav-link">
-          <a href="#shows" class="smooth-scroll">shows</a>
-          <span></span>
-        </div>
-        <div class="nav-link">
-          <a href="#contact" class="smooth-scroll">contact</a>
-          <span></span>
-        </div>
-      </div>
+  </header>
+  
+  <aside class="aside-nav dn db-ns tc fixed bg-black h-100 br b--yellow">
+    <h1 class="pt4 pt5-l ph3 mv0" aria-label="G. King Artist Musician Entertainer from the west side of Detroit">
+      <img src="./src/media/gking_logo.png" alt=""/>
+    </h1>
+    <nav class="f3 f2-l ff-arcade ttu tracked pa3 pl4-l">
+      <a href="/Users/kmtate/Projects/garyking/index.html" class="db mv4 mv5-l">Home</a>
+      <a href="/Users/kmtate/Projects/garyking/about.html" class="db mv4 mv5-l">About</a>
+      <a href="/Users/kmtate/Projects/garyking/shows" class="db mv4 mv5-l">Shows</a>
+      <a href="/Users/kmtate/Projects/garyking/contact" class="db mv4 mv5-l">Contact</a>
+      <a href="/Users/kmtate/Projects/garyking/videos" class="db mv4 mv5-l">Videos</a>
     </nav>
-    <img src="./src/media/westside.gif" alt="G. King logo - the crown">
-    <div class="scroll-down">
-      <a href="#about" class="smooth-scroll arrow-link">
+  </aside>
+
+  <main id="main" class="main-content bg-black">
+    <section class="relative vh-100 tc pb4">
+      <img src="./src/media/westside.gif" alt="G. King logo - the crown" class="relative transform-center-t" width="400">
+      <a href="#pageSubjectContent" class="scroll-down smooth-scroll absolute transform-center-l bottom-0 mb3">
         <!-- <i class="fa fa-arrow-down fa-3x"></i> -->
         <i class="fa fa-chevron-down fa-3x"></i>
       </a>
-    </div>
-  </header>
-
-  <main>
-    <section id="about" class="background-lightgray">
+    </section>
+    <section id="pageSubjectContent">
+      <div class="flex flex-wrap justify-between">
+        <a id="artthouholy" 
+          class="w-50-el dib"
+          href="https://open.spotify.com/album/5ubrbz0pB3GqrtEl38FmiN?si=eG7m3Q19SlOOo7wzogLJCQ"
+          target="_blank" 
+          rel="noopener noreferrer"
+        >
+          <img src="src/media/artthouholy_notext_skyblue.jpg"/>
+        </a>
+        <a id="gundam_wing" 
+          class="w-50-el dib"
+          href="https://open.spotify.com/album/6zWjjCVkonDZFIZMlg0mxX?si=QA2fx9vnQeinVwJaN30RCw"
+          target="_blank" 
+          rel="noopener noreferrer"
+        >
+          <img src="src/media/Gundam Wing.jpg"/>
+        </a>
+        <a id="alls_forgiven" 
+          class="w-50-el dib"
+          href="https://open.spotify.com/album/1RUgg1J7OLPSguD89xP6Tg?si=kiewfQ4zRDin3vEWC4HVtw"
+          target="_blank" 
+          rel="noopener noreferrer"
+        >
+          <img src="src/media/IMG_4779.PNG"/>
+        </a>
+        <a id="defiance" 
+          class="w-50-el dib"
+          href="https://open.spotify.com/album/5oznk0HtSuFn815t8WwEhE?si=9agndj2RRCOTheIGMruHAA"
+          target="_blank" 
+          rel="noopener noreferrer"
+        >
+          <img src="src/media/defy gking.jpg"/>
+        </a>
+        <a id="heavy_lies_the_crown" href="https://open.spotify.com/album/47DKo5cpcfmM95MIFvbJP5?si=XVfIBplNSLCgtib3b9dBRA"
+          target="_blank" 
+          class="w-50-el dib">
+            <img src="src/media/image_6483441.JPG"/>
+        </a>
+      </div>
+    </section>
+    
+    <section id="about" class="background-lightgray dn">
       <h2>about</h2>
       <div>
         <p>
@@ -72,29 +107,7 @@
         </p>
       </div>
     </section>
-    <section id="music" class="background-gray">
-      <h2>music</h2>
-      <div>
-        <div class="music-subsection">
-          <h3>new</h3>
-          <div class="flex-center">
-            <iframe src="https://open.spotify.com/embed/album/1wEJQ1qrNnHrES932i6yBi" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media" class="single"></iframe>
-          </div>
-        </div>
-        <div class="music-subsection">
-          <h3>albums</h3>
-          <div class="flex-center">
-            <div class="mb-30 side-fade-display">
-              <iframe src="https://open.spotify.com/embed/album/5ubrbz0pB3GqrtEl38FmiN" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-            </div>
-            <div class="side-fade-display">
-              <iframe src="https://open.spotify.com/embed/album/47DKo5cpcfmM95MIFvbJP5" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="shows" class="background-lightgray">
+    <section id="shows" class="background-lightgray white dn">
       <h2>shows</h2>
       <div>
         <p>
@@ -102,7 +115,7 @@
         </p>
       </div>
     </section>
-    <section id="contact" class="background-black">
+    <section id="contact" class="background-black dn">
       <h2>contact</h2>
       <div>
         <!-- Begin Mailchimp Signup Form -->
@@ -121,12 +134,6 @@
       </div>
     </section>
   </main>
-  
-  <div class="back-to-top">
-    <a href="#" class="smooth-scroll arrow-link">
-      <i class="fa fa-arrow-up fa-3x"></i>
-    </a>
-  </div>
 
   <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
   <script src="src/js/script.js"></script>

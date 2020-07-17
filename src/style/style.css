@@ -1,268 +1,48 @@
 body {
-  font-family: 'Noto Serif', serif;
-}
-
-h2 {
-  border-bottom: 5px solid yellow;
-  color: white;
-  display: inline-block;
-  font-size: 3rem;
-  font-style: italic;
-  font-weight: 700;
-  margin-bottom: 50px;
-  text-transform: uppercase;
-}
-
-h3 {
-  color: black;
-  font-size: 2rem;
-  font-weight: 700;
-  margin: 25px 0;
-  text-transform: uppercase;
-}
-
-p {
-  font-size: 1.5rem;
-  letter-spacing: 1px;
-  line-height: 1.25;
-  margin: auto;
-  max-width: 1230px;
-  text-align: left;
-}
-
-header {
-  height: 100vh;
-  width: 100vw;
-}
-
-nav {
-  position: relative;
-  text-align: center;
-  top: 10%;
-  transition: left .5s;
-  z-index: 1;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
 }
 
 a {
-  color: rgb(85, 26, 139);
-}
-
-.nav-links {
-  display: flex;
-  cursor: pointer;
-  justify-content: center;
-}
-
-.nav-link {
-  margin: 0 25px;
-}
-
-.nav-link:hover span {
-  width: 100%;
-}
-
-nav a {
   color: white;
-  font-family: 'Press Start 2P', sans-serif;
-  font-size: 1.5rem;
   text-decoration: none;
 }
 
-nav span {
-  background-color: yellow;
-  display: block;
-  height: 2px;
-  margin-top: 5px;
-  transition: width .25s;
-  width: 0;
+/* specific */
+.main-content {
+  margin-left: 0;
 }
 
-.hamburger {
-  cursor: pointer;
-  display: none;
-  left: 25px;
-  margin-bottom: 25px;
-  position: relative;
-  top: 25px;
+/* helpers */
+.ff-arcade {
+  font-family: 'Press Start 2P', sans-serif;
 }
 
-.hamburger span {
-  background-color: lightgray;
-  display: block;
-  height: 3px;
-  margin: 10px 0;
-  position: relative;
-  width: 50px;
-}
-
-header img {
-  height: auto;
+.transform-center-l {
   left: 50%;
-  max-width: 100%;
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 300px;
-}
-
-.arrow-link:active {
-  color: white;
-}
-
-.scroll-down {
-  
-  bottom: 3%;
-  left: 50%;
-  position: absolute;
   transform: translateX(-50%);
 }
 
-.scroll-down i {
-  animation: chevronColorChange 8s infinite;
+.transform-center-t {
+  top: 50%;
+  transform: translateY(-50%);
 }
 
-@keyframes chevronColorChange {
-  25% { color: yellow; }
-  50% { color: blue; }
-  75% { color: red; }
-  100% { color: purple; }
-}
-
-main {
-  box-sizing: border-box;
-  display: inline-block;
-  text-align: center;
-  width: 100%;
-}
-
-section {
-  padding: 150px 0;
-}
-
-#about p {
-  margin-bottom: 25px;
-}
-
-#shows p {
-  text-align: center;
-}
-
-.background-lightgray {
-  background-color: lightgray;
-}
-
-.background-gray {
-  background-color: gray;
-}
-
-.background-black {
-  background-color: black;
-}
-
-#music h2 a {
-  color: white;
-}
-
-.flex-center {
-  display: flex;
-  justify-content: center;
-}
-
-.music-subsection {
-  padding-bottom: 50px;
-}
-
-#music iframe {
-  margin: 0 25px;
-  min-width: 300px;
-}
-
-iframe.single {
-  height: 80px;
-}
-
-.back-to-top {
-  bottom: 25px;
-  height: 50px;
-  position: fixed;
-  right: -50px;
-  transition: right .5s;
-  width: 50px;
-}
-
-.back-to-top-show {
-  right: 25px;
-}
-
-.back-to-top a {
-  display: block;
-  height: 100%;
-  width: 100%;
-}
-
-@media screen and (max-width: 767px) {
-  header img {
-    width: 200px;
+/* mqs */
+@media only screen and (min-width: 30rem) {
+  .main-content {
+    margin-left: 250px;
   }
+}
 
-  .hamburger {
-    display: inline-block;
+@media only screen and (min-width: 60rem) {
+  .main-content {
+    margin-left: 500px;
   }
+}
 
-  nav {
-    left: -250px;
-    top: 5%;
-  }
-
-  .show-mobile-nav {
-    left: 0;
-  }
-
-  .nav-links {
-    align-items: flex-end;
-    background-color: lightgray;
-    flex-direction: column;
-    height: 500px;
-    justify-content: flex-start;
-    padding-top: 75px;
-    width: 250px;
-  }
-
-  .nav-link {
-    margin: 10px 25px;
-  }
-
-  nav a {
-    color: black;
-  }
-
-  .nav-link:hover span {
-    width: 0;
-  }
-
-  section {
-    padding: 50px 15px;
-  }
-
-  h2 {
-    font-size: 2rem;
-    margin-bottom: 25px;
-  }
-
-  h3 {
-    font-size: 1.5rem;
-  }
-
-  p {
-    font-size: 1rem;
-  }
-
-  /* helpers */
-  .mb-30 {
-    margin-bottom: 30px;
-  }
-
-  .flex-center {
-    flex-direction: column;
+@media only screen and (min-width: 90rem) {
+  .w-50-el {
+    width: 50%;
   }
 }
