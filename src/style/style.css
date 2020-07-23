@@ -8,12 +8,12 @@ a {
   text-decoration: none;
 }
 
-/* specific */
+/* SPECIFIC */
 .main-content {
   margin-left: 0;
 }
 
-/* helpers */
+/* HELPERS */
 .ff-arcade {
   font-family: 'Press Start 2P', sans-serif;
 }
@@ -28,16 +28,82 @@ a {
   transform: translateY(-50%);
 }
 
-/* mqs */
+/* HOME */
+.album-art {
+  width:50%;
+}
+
+i.fa-chevron-down {
+  animation: colorChange 8s infinite;
+}
+
+@keyframes colorChange {
+  25% { color: yellow; }
+  50% { color: blue; }
+  75% { color: red; }
+  100% { color: purple; }
+}
+
+/* @keyframes backgroundColorChange {
+  25% { background-color: yellow; }
+  50% { background-color: blue; }
+  75% { background-color: red; }
+  100% { background-color: purple; }
+} */
+
+/* NAV */
+.aside-nav {
+  left: -75%;
+  transition: left .25s;
+  width: 75%;
+  z-index: 998;
+}
+
+.aside-nav-visible {
+ left: 0;
+}
+
+.hamburger-nav {
+  cursor: pointer;
+  left: 30px;
+  position: absolute;
+  top: 30px;
+  z-index: 999;
+}
+
+.hamburger-nav div {
+  background-color: white;
+  height: 3px;
+  width: 50px;
+}
+
+.hamburger-nav div:first-child {
+  margin-bottom: 10px;
+}
+
+.hamburger-nav div:last-child {
+  margin-top: 10px;
+}
+
+/* RESPONSIVE */
 @media only screen and (min-width: 30rem) {
   .main-content {
     margin-left: 250px;
+  }
+
+  .aside-nav {
+    left: 0;
+    width: 250px;
   }
 }
 
 @media only screen and (min-width: 60rem) {
   .main-content {
     margin-left: 500px;
+  }
+
+  .aside-nav {
+    width: 500px;
   }
 }
 

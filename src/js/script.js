@@ -5,29 +5,12 @@
       speed: 500
     });
 
-    // https://github.com/michalsnik/aos
-    // AOS.init({
-    //   duration: 1500
-    // });
-
-    // initBackToTopButton('.back-to-top');
-    initHamburgerMenu('.hamburger');
+    initHamburgerMenu();
   });
 
-  function initBackToTopButton(selector) {
-    var element = document.querySelector(selector);
-    document.addEventListener('scroll', function() {
-      if (window.pageYOffset) {
-        element.classList.add('back-to-top-show');
-      } else {
-        element.classList.remove('back-to-top-show');
-      }
-    })
-  }
-
-  function initHamburgerMenu(selector) {
-    document.querySelector(selector).addEventListener('click', function() {
-      document.querySelector('nav').classList.toggle('show-mobile-nav');
+  function initHamburgerMenu() {
+    document.querySelector('.hamburger-nav').addEventListener('click', function() {
+      document.querySelector('.aside-nav').classList.toggle('aside-nav-visible');
     });
   }
 })();
