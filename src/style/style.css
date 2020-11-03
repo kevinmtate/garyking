@@ -89,6 +89,12 @@ i.fa-chevron-down {
   margin-top: 10px;
 }
 
+/* Videos */
+#noahsVideo {
+  width: 300px;
+  height: 174px;
+}
+
 /* RESPONSIVE */
 @media only screen and (min-width: 30rem) {
   .main-content {
@@ -99,6 +105,11 @@ i.fa-chevron-down {
     left: 0;
     width: 250px;
   }
+
+  #noahsVideo {
+    width: 450px;
+    height: 261px;
+  }
 }
 
 @media only screen and (min-width: 60rem) {
@@ -108,6 +119,11 @@ i.fa-chevron-down {
 
   .aside-nav {
     width: 500px;
+  }
+
+  #noahsVideo {
+    width: 650px;
+    height: 377px;
   }
 }
 
